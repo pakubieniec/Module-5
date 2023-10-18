@@ -1,5 +1,10 @@
 public class Square extends Rectangle{
-    public int calculateDiameter(int a, int b){
+
+    public Square(int a, int b) {
+        super(a, b);
+    }
+
+    public int calculateDiameter(){
         return 2*(a * b);
     };
 }

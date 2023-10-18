@@ -2,18 +2,20 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TriangleTest {
-    Triangle tr = new Triangle();
+    Triangle tr = new Triangle(8,4);
+    Triangle tr2 = new Triangle(25,8);
+    Triangle tr3 = new Triangle(32,9);
 
     @Test
-    public void areaOfTheTriangleLength8AndHeigh4ShouldReturn16(){
-        Assertions.assertEquals(16, tr.calculateArea(8.0,4.0));
+    public void areaOfTheTriangleLength8AndHeight4ShouldReturn16(){
+        Assertions.assertEquals(16, tr.calculateArea());
     }
-    @org.junit.Test
-    public void areaOfTheTriangleLength25AndHeigh8ShouldReturn110(){
-        Assertions.assertEquals(100, tr.calculateArea(25.0,8.0));
+    @Test
+    public void areaOfTheTriangleLength25AndHeight8ShouldReturn100(){
+        Assertions.assertEquals(100, tr2.calculateArea());
     }
-    @org.junit.Test
-    public void areaOfTheTriangleLength32AndHeigh9ShouldReturn144(){
-        Assertions.assertEquals(144, tr.calculateArea(32.0,9.0));
+    @Test
+    public void areaOfTheTriangleLength32AndHeight9ShouldReturn144(){
+        Assertions.assertEquals(144, tr3.calculateArea());
     }
 }

@@ -1,16 +1,13 @@
 public class Triangle implements GeometricFigure{
-    @Override
-    public double calculateArea(int a) {
-        return 0;
+    private int a;
+    private int h;
+
+    public Triangle(int a, int h){
+        this.a = a;
+        this.h = h;
     }
 
-    @Override
-    public double calculateArea(double a, double h) {
-        return (a * h) / 2;
-    }
-
-    @Override
-    public int calculateArea(int a, int h) {
+    public int calculateArea() {
         return (a * h) / 2;
     }
 }

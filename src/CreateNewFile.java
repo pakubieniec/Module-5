@@ -5,12 +5,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class CreateNewFile {
-    public static void main(String[] args) {
-        writeUserInputToFile();
-        readFromFile("files//test4.txt");
-    }
 
-    public static boolean writeUserInputToFile() {
+    public boolean writeUserInputToFile() {
         System.out.println("Podaj nazwe pliku ktory chcesz utworzyc");
         Scanner scanner = new Scanner(System.in);
         String fileName = "files//" + scanner.nextLine();
@@ -49,7 +45,7 @@ public class CreateNewFile {
         return true;
     }
 
-    public static void readFromFile(String fileName) {
+    public void readFromFile(String fileName) {
         FileReader fr = null;
         try {
             int num = 0;

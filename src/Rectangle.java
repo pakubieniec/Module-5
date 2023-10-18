@@ -1,16 +1,13 @@
 public class Rectangle implements GeometricFigure{
-    @Override
-    public double calculateArea(int a) {
-        return 0;
+    protected int a;
+    protected int b;
+    public Rectangle(int a, int b){
+        this.a = a;
+        this.b = b;
     }
-
     @Override
-    public double calculateArea(double a, double b) {
+    public int calculateArea() {
         return a * b;
     }
 
-    @Override
-    public int calculateArea(int a, int b) {
-        return a * b;
-    }
 }

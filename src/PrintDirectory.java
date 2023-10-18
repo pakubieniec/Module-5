@@ -5,13 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class PrintDirectory {
-
-    public static void main(String args[]) {
-
-        printDirectory(new File("C:\\Users\\Patty\\Documents\\NetBeansProjects\\Mod-5"));
-        }
-
-    public static void printDirectory(File directoryPath) {
+    public void printDirectory(File directoryPath) {
         File filesList[] = directoryPath.listFiles();
         System.out.println("List of files and directories in the specified directory:");
 //        Scanner sc = null;

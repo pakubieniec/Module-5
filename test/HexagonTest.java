@@ -7,15 +7,17 @@ public class HexagonTest {
     Hexagon hex3 = new Hexagon(3);
 
     @Test
-    public void areaOfTheHexagon10ShouldReturn259(){
+    public void areaOfTheHexagon10ShouldReturn259() {
         Assertions.assertEquals(259, hex.calculateArea());
     }
+
     @Test
-    public void areaOfTheHexagon7ShouldReturn127(){
+    public void areaOfTheHexagon7ShouldReturn127() {
         Assertions.assertEquals(127, hex2.calculateArea());
     }
+
     @Test
-    public void areaOfTheHexagon3ShouldReturn23(){
+    public void areaOfTheHexagon3ShouldReturn23() {
         Assertions.assertEquals(23, hex3.calculateArea());
     }
 

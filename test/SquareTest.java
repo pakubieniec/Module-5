@@ -2,21 +2,23 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class SquareTest {
-    Square sq = new Square(5,4);
-    Square sq2 = new Square(21,6);
-    Square sq3 = new Square(3,15);
+    Square sq = new Square(5);
+    Square sq2 = new Square(21);
+    Square sq3 = new Square(3);
 
     @Test
-    public void DiameterOfSquare5And4ShouldReturn40() {
-        Assertions.assertEquals(40, sq.calculateDiameter());
+    public void DiameterOfSquare5ShouldReturn20() {
+        Assertions.assertEquals(20, sq.calculateDiameter());
     }
+
     @Test
-    public void DiameterOfSquare21And6ShouldReturn252() {
-        Assertions.assertEquals(252, sq2.calculateDiameter());
+    public void DiameterOfSquare21ShouldReturn84() {
+        Assertions.assertEquals(84, sq2.calculateDiameter());
     }
+
     @Test
-    public void DiameterOfSquare3And15ShouldReturn90() {
-        Assertions.assertEquals(90, sq3.calculateDiameter());
+    public void DiameterOfSquare3ShouldReturn9() {
+        Assertions.assertEquals(12, sq3.calculateDiameter());
     }
 
 }
